@@ -1,11 +1,11 @@
 from django.contrib import admin
 
-from inventory.models import Car
+from inventory.models import Item
 
 
-class CarAdmin(admin.ModelAdmin):
+class ItemAdmin(admin.ModelAdmin):
     list_display = ('id', 'year', 'make', 'model',
                     'price', 'created', 'updated')
 
 
-admin.site.register(Car, CarAdmin)
+admin.site.register(Item, ItemAdmin)

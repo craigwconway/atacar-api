@@ -1,9 +1,10 @@
 from rest_framework import serializers
 
-from inventory.models import Car
+from inventory.models import Item
 
 
-class CarSerializer(serializers.ModelSerializer):
+class ItemSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Car
-        fields = '__all__'
+        model = Item
+        # fields = '__all__'
+        exclude = ('description',)

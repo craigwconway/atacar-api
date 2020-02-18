@@ -1,3 +1,7 @@
 djangorestframework
+djoser
+djangorestframework_simplejwt
+django-cors-headers
 django-filter
 Markdown
+mysqlclient
